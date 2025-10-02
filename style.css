@@ -1,4 +1,49 @@
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    background-color: whitesmoke;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    /* slightly bigger for nicer look */
+    margin: 0.5rem 0;
+    /* spacing between cards */
+    width: 80%;
+    height: 250px;
+    /* fixed height for uniformity */
+}
 
-book-form{
-    display:none;
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+#book-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    justify-items: center;
+    height: 100vh;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(39deg, #90a295, #4a4547, #880452);
+    background-size: 180% 180%;
+    animation: gradient-animation 15s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }

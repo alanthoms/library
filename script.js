@@ -30,7 +30,7 @@ function displayBooks() {
 
     myLibrary.forEach((book) => {
         const bookDiv = document.createElement('div');
-        bookDiv.classList.add('book');
+        bookDiv.classList.add('book', 'card');
         bookDiv.setAttribute('data-id', book.id);
 
         const title = document.createElement('h3');
